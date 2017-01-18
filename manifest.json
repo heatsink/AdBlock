@@ -3,12 +3,12 @@
    "version": "1.0",
    "manifest_version": 2,
    "description": "Manifest test",
-   "app": {
-      "urls":["http://www.seanwallace.info"]
-      "launch": {
-         "web_url": "http://www.google.com"
-      }
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Sean's Cool Extension",
+      "default_popup": "extension.html"
    },
+   "content_security_polciy": "script-src 'self' https://www.google.com; object-src 'self'",
    "icons": {
       "128":"icon.png"
    }
